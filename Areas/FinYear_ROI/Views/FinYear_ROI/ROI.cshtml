@@ -1,0 +1,251 @@
+﻿@model WebPACS.Areas.FinYear_ROI.Models.FinYear_ROI
+@{
+    ViewData["Title"] = "ROI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<center>
+    <h2>
+        ROI
+    </h2>
+</center>
+
+<div class="form-group">
+    <label style="margin-left:50px" class="control-label col-md-12">Type</label>
+    <div style="margin-left:50px" class="col-md-12">
+        @*<input class="form-control" />*@
+        <select class="form-control" id="Type" name="Type">
+            <option>&nbsp;Select&nbsp; Type</option>
+            <option>Deposit</option>
+            <option>Loan</option>
+
+        </select>
+    </div>
+</div>
+
+
+<style>
+    .panel-default {
+        background-color: gainsboro;
+    }
+</style>
+
+<div class="row" style="margin-left: 50px;">
+    <div class="col-md-12">
+        <form asp-action="FinYear_ROI">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="panel panel-default">
+                <p style="margin-right:-30px">
+                    Deposit
+                </p>
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-12">Type Of Deposit</label>
+                        <div class="col-md-12">
+                            @*<input class="form-control" />*@
+                            <select class="form-control" id="Type" name="Type">
+                                <option>&nbsp;Select&nbsp; Type</option>
+                                <option>FD</option>
+                                <option>RD</option>
+                                <option>LTC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-12"></label>
+                        <div class="col-md-12">
+                            @*<input class="form-control" />*@
+                            <select class="form-control" style="margin-top:8px;" id="Type" name="Type">
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select</option>
+                                <option>Days</option>
+                                <option>Month</option>
+                                <option>Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="form-group">
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control col-md-10" style="margin-top:30px;margin-left:8px" placeholder="Duration" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control col-md-10" style="margin-top:30px;margin-left:-30px" placeholder="Rate Of Interest" />
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-20px;margin-left:340px" placeholder="Duration" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-20px;margin-left:80px" placeholder="Rate Of Interest" />
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-5px;margin-left:340px" placeholder="Duration" />
+                        </div>
+
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-5px;margin-left:80px" placeholder="Rate Of Interest" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" style="margin-top:-100px;" value="Create" class="btn btn-primary" />
+                    </div>
+                </div>
+
+
+                &nbsp; &nbsp; &nbsp;
+
+            </div>
+            &nbsp; &nbsp; &nbsp;
+
+            <div class="panel panel-default">
+                <p style="margin-right:-30px">
+                    Loan
+                </p>
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-12">Type Of Loan</label>
+                        <div class="col-md-12">
+                            @*<input class="form-control" />*@
+                            <select class="form-control" id="Type" name="Type">
+                                <option>&nbsp;Select&nbsp; Type</option>
+                                <option>Term Loan</option>
+                                <option>Gold Loan</option>
+                                <option>Crop Loan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-12"></label>
+                        <div class="col-md-12">
+                            @*<input class="form-control" />*@
+                            <select class="form-control" style="margin-top:8px;" id="Type" name="Type">
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select</option>
+                                <option>Days</option>
+                                <option>Month</option>
+                                <option>Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="form-group">
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control col-md-10" style="margin-top:30px;margin-left:8px" placeholder="Duration" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control col-md-10" style="margin-top:30px;margin-left:-30px" placeholder="Rate Of Interest" />
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-20px;margin-left:340px" placeholder="Duration" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-20px;margin-left:80px" placeholder="Rate Of Interest" />
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-5px;margin-left:340px" placeholder="Duration" />
+                        </div>
+
+
+                        <div class="form-group col-md-6">
+                            <input class="form-control col-md-5" style="margin-top:-5px;margin-left:80px" placeholder="Rate Of Interest" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" style="margin-top:-100px;" value="Create" class="btn btn-primary" />
+                    </div>
+
+
+                </div>
+
+
+                &nbsp; &nbsp; &nbsp;
+            </div>
+
+            @*<div class="panel-group">
+                    <table class="table table-bordered" id="tableid">
+                        <thead>
+                            <tr>
+                                <th>Deposit Type</th>
+                                <th>Type</th>
+                                <th>Duration</th>
+                                <th>Rate of Interest </th>
+                            </tr>
+
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                </div>*@
+
+
+
+
+
+
+
+        </form>
+
+    </div>
+
+</div>
+<br>
+<br>
+
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+@*<script>
+        if (!Modernizr.inputtypes.date) {
+            $(function () {
+                $(".datecontrol").datepicker();
+            });
+        }
+    </script>*@
+@*<script type="text/javascript">
+        $(function () {
+            $("#SelectedDate").datepicker({
+                showOn: 'button',
+                buttonImageOnly: true,
+                buttonImage: '/images/calendar.gif'
+            });
+        });
+    </script>*@

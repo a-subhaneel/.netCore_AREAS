@@ -1,0 +1,127 @@
+﻿@model WebPACS.Areas.DCCB.Models.DCCB
+
+@{
+    ViewData["Title"] = "DCCB";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<center>
+    <h2>
+        DCCB Details
+    </h2>
+</center>
+
+
+<div class="row" style="margin-left: 300px;">
+    <div class="col-lg-12">
+        <div class="row">
+            <form asp-action="DCCB">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">DCCBName:</label>
+                        <div class="col-md-12">
+                            <input class="form-control  " />
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Branch:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Contact:</label><br />
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">StreetAddress:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">StreetAddress2:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <div class="form-group">
+                        <label class="control-label col-md-2">City:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">State:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <div class="form-group">
+                        <label class="control-label col-md-2">PostalCode:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Country:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Email:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Website:</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <div class="form-group">
+                        <label class="control-label col-md-2">DCCBBaseIFSCCode</label>
+                        <div class="col-md-12">
+                            <input class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group" style="margin-bottom:100px">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
